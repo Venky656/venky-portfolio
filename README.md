@@ -1,71 +1,112 @@
-# Venkaiah Swamy Kalikaya's Portfolio 🚀
+<div align="center">
 
-Welcome to the official repository of my personal portfolio! This project showcases my journey, skills, and the projects I have worked on as a developer. The goal of this portfolio is to demonstrate my technical abilities, creativity, and passion for crafting exceptional digital experiences.
+# 🖥️ Venkaiah Swamy Kalikaya | Portfolio
 
-## Table of Contents
+**B.Tech CSE · DSA Problem Solving · Web Development · AI Enthusiast**
 
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Development Server](#development-server)
-- [Production](#production)
-- [Usage](#usage)
-- [Contact](#contact)
+A premium, animated developer portfolio built with React, Vite, Tailwind CSS and Framer Motion.
 
-## Project Overview
+[![Live Site](https://img.shields.io/badge/Live%20Site-venky--portfolio--v1-black?logo=vercel)](https://venky-portfolio-v1.vercel.app)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vite.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-13-0055FF?logo=framer)](https://motion.dev)
+[![Stars](https://img.shields.io/github/stars/Venky656/venky-portfolio)](https://github.com/Venky656/venky-portfolio)
 
-This portfolio project is built using React 19 with Vite, a powerful build tool for modern web applications. It serves as a showcase for my skills and projects, and it is designed to be a scalable and maintainable codebase.
+</div>
 
-## Technologies Used
+## ✨ About
 
-- React 19
-- Vite
-- JavaScript
-- CSS
-- HTML
-- TailwindCSS
-- Framer Motion
-- lucide-react
-- React Router
+This is my personal portfolio website — a single-page showcase of my journey as a B.Tech CSE student passionate about **Data Structures & Algorithms, web development, and AI**. It features premium animations, an interactive projects showcase, and a polished dark-themed UI.
 
-## Setup
+## 🚀 Features
 
-Make sure to install the dependencies:
+- **Animated hero** — smooth spring entrance animations
+- **Custom cursor** — interactive dot cursor on desktop
+- **Projects showcase** — hover a project to see its screenshot slide into the preview card
+- **Get in touch** — copy email / phone / address with one click
+- **Dark / light themes** + multiple accent colors
+- **Lazy-loaded sections** — only loads what you scroll to
+
+## 🛠️ Tech Stack
+
+| Tech          | Purpose            |
+| ------------- | ------------------ |
+| React 19      | UI framework       |
+| Vite 8        | Build tool         |
+| Tailwind CSS 4 | Styling           |
+| Framer Motion | Animations         |
+| lucide-react  | Icons              |
+| shadcn/ui     | UI components      |
+| Vercel        | Deployment         |
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js v18+
+
+### Installation
 
 ```bash
-# npm
+# 1. Clone the repo
+git clone https://github.com/Venky656/venky-portfolio.git
+cd venky-portfolio
+
+# 2. Install dependencies
 npm install
-```
 
-## Development Server
-
-Start the development server on `http://localhost:5173`:
-
-```bash
-# npm
+# 3. Start the dev server
 npm run dev
 ```
 
-## Production
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Build the application for production:
+### Scripts
 
-```bash
-# npm
-npm run build
+| Command           | Description                     |
+| ----------------- | ------------------------------- |
+| `npm run dev`     | Start development server        |
+| `npm run build`   | Build for production            |
+| `npm run preview` | Preview the production build    |
+| `npm run lint`    | Run Oxlint checks               |
+
+## 📁 Project Structure
+
+```
+src/
+├── components/     # All UI components + shadcn/ui primitives
+│   ├── Hero.jsx    # Landing section
+│   ├── Projects.jsx# Interactive project showcase
+│   ├── Contact.jsx # Form + get-in-touch card
+│   └── ...
+├── data/
+│   └── portfolioData.js   # All personal content lives here
+├── App.jsx
+└── main.jsx
 ```
 
-Locally preview production build:
+> **Note:** Update all your personal info (bio, education, skills, projects, contact) in **`src/data/portfolioData.js`**.
+
+## 🌐 Deployment
+
+Deployed on **Vercel**: [venky-portfolio-v1.vercel.app](https://venky-portfolio-v1.vercel.app)
 
 ```bash
-# npm
-npm run preview
+npx vercel --prod
 ```
 
-## Usage
+## 📫 Contact
 
-Visit the live site at [https://venky-portfolio-v1.vercel.app](https://venky-portfolio-v1.vercel.app) to see the portfolio in action.
+**Venkaiah Swamy Kalikaya** (aka Venky)
 
-## Contact
+- 📧 [venkaiahkalikaya123@gmail.com](mailto:venkaiahkalikaya123@gmail.com)
+- 🐙 [GitHub](https://github.com/Venky656)
+- 💼 [LinkedIn](https://www.linkedin.com/in/venkaiah-swamy-kalikaya-236208295/)
+- ⚡ [LeetCode](https://leetcode.com/u/venkaiahkalikaya123/)
+- 🍽️ [CodeChef](https://www.codechef.com/users/venkey30)
+- 🏆 [HackerRank](https://www.hackerrank.com/profile/venkaiahkalikay1)
 
-For any questions or support, please contact me at [venkaiahkalikaya123@gmail.com](mailto:venkaiahkalikaya123@gmail.com).
+---
+
+<div align="center">Made with 💜 by Venky</div>
