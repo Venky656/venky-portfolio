@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { motion, useInView, animate } from 'framer-motion'
+import { useInView, animate } from 'framer-motion'
 import { ArrowUpRight, Loader2, CheckCircle2, AlertTriangle } from 'lucide-react'
 import Reveal from './Reveal'
 import useDsaStats from '../hooks/useDsaStats'

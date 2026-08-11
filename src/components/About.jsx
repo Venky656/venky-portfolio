@@ -1,5 +1,4 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { motion } from 'framer-motion'
 import { TerminalSquare, Rocket, Palette, Code2, PenTool } from 'lucide-react'
 import Reveal from './Reveal'
 import { about } from '../data/portfolioData'
