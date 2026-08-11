@@ -1,115 +1,71 @@
-<div align="center">
+# Venkaiah Swamy Kalikaya's Portfolio 🚀
 
-# Venkaiah Swamy Kalikaya — Portfolio
+Welcome to the official repository of my personal portfolio! This project showcases my journey, skills, and the projects I have worked on as a developer. The goal of this portfolio is to demonstrate my technical abilities, creativity, and passion for crafting exceptional digital experiences.
 
-**B.Tech CSE · DSA · Web Development · AI**
+## Table of Contents
 
-A premium, animated, dark-themed developer portfolio built with **React, Vite, Tailwind CSS and Framer Motion**.
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Development Server](#development-server)
+- [Production](#production)
+- [Usage](#usage)
+- [Contact](#contact)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel&logoColor=white)](https://venky-portfolio-v1.vercel.app)
-[![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB?logo=react&logoColor=white)](https://react.dev)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+## Project Overview
 
-</div>
+This portfolio project is built using React 19 with Vite, a powerful build tool for modern web applications. It serves as a showcase for my skills and projects, and it is designed to be a scalable and maintainable codebase.
 
----
+## Technologies Used
 
-## ✨ Features
+- React 19
+- Vite
+- JavaScript
+- CSS
+- HTML
+- TailwindCSS
+- Framer Motion
+- lucide-react
+- React Router
 
-- **Cinematic hero** — elastic spring entrance animations (`appearStart` style)
-- **Custom cursor** — spring-follow dot that grows on interactive elements (desktop only)
-- **Projects showcase** — interactive preview card that:
-  - flies in from the corner on hover
-  - slides the screenshot up from the bottom of the frame
-  - stays sticky and slides down as you scroll the list
-- **Timeline progress bar** — scroll-linked progress along the Education timeline
-- **Get in touch card** — email / phone / address with one-click **copy-to-clipboard + toast** notifications
-- **Scrolling marquee footer** — animated monospace ticker
-- **Reusable animation system** — `Reveal` component with `fade`, `elastic`, `slideLeft`, `slideRight` variants
-- **Theme engine** — dark/light toggle + multiple accent colors
-- **Film grain + spotlight** — subtle cinematic texture overlays
+## Setup
 
-## 🛠 Tech Stack
-
-| Layer        | Tech |
-|--------------|------|
-| Framework    | React 19 |
-| Build Tool   | Vite 8 |
-| Styling      | Tailwind CSS 4 |
-| Animations   | Framer Motion 13 |
-| Icons        | lucide-react |
-| CLI/ST UI    | shadcn/ui + Radix UI |
-| Linting      | Oxlint |
-| Deployment   | Vercel |
-
-## 🚀 Quick Start
+Make sure to install the dependencies:
 
 ```bash
-# 1. Install dependencies
+# npm
 npm install
-
-# 2. Start the dev server
-npm run dev
-
-# 3. Build for production
-npm run build
-
-# 4. Preview the production build
-npm run preview
-
-# 5. Lint
-npm run lint
 ```
 
-## 📂 Project Structure
+## Development Server
 
-```
-src/
-├── components/
-│   ├── ui/            # shadcn/ui primitives (button, badge, card)
-│   ├── Navbar.jsx     # theme + accent switcher
-│   ├── Hero.jsx       # cinematic entrance
-│   ├── About.jsx      # bio cards
-│   ├── Education.jsx  # timeline + scroll progress bar
-│   ├── Skills.jsx     # skill cards + hover-zoom badges
-│   ├── Profiles.jsx   # DSA/coding profile cards
-│   ├── Projects.jsx   # interactive preview showcase
-│   ├── Contact.jsx    # form + get-in-touch copy card
-│   ├── Footer.jsx     # marquee + credits
-│   ├── Reveal.jsx     # reusable scroll animation wrapper
-│   └── CustomCursor.jsx
-├── data/
-│   └── portfolioData.js   # all content lives here
-└── App.jsx
-```
-
-> **Tip:** All personal content (bio, education, skills, profiles, projects, contact)
-> lives in one file — `src/data/portfolioData.js`. Edit that file to update the site.
-
-## ⚡ Performance
-
-- **Code splitting** — vendor libs split into cached chunks (`react`, `motion`, `icons`, `radix`)
-- **Lazy loading** — below-the-fold sections load only as you scroll (`React.lazy` + `Suspense`)
-- **Optimized images** — screenshots compressed 4–6 MB → **25–134 KB** WebP
-- **Font preload** — `dns-prefetch` + `preconnect` for Google Fonts with `display=swap`
-
-## 🌐 Deployment
-
-The site is deployed on **Vercel** and auto-updates on push.
-
-**Live:** https://venky-portfolio-v1.vercel.app
+Start the development server on `http://localhost:5173`:
 
 ```bash
-# Manual deploy from CLI
-npx vercel --prod
+# npm
+npm run dev
 ```
 
----
+## Production
 
-<div align="center">
+Build the application for production:
 
-Built with ❤️ by **Venkaiah Swamy Kalikaya** (aka Venky)
+```bash
+# npm
+npm run build
+```
 
-[GitHub](https://github.com/Venky656) · [LinkedIn](https://www.linkedin.com/in/venkaiah-swamy-kalikaya-236208295/) · [LeetCode](https://leetcode.com/u/venkaiahkalikaya123/) · [CodeChef](https://www.codechef.com/users/venkey30)
+Locally preview production build:
 
-</div>
+```bash
+# npm
+npm run preview
+```
+
+## Usage
+
+Visit the live site at [https://venky-portfolio-v1.vercel.app](https://venky-portfolio-v1.vercel.app) to see the portfolio in action.
+
+## Contact
+
+For any questions or support, please contact me at [venkaiahkalikaya123@gmail.com](mailto:venkaiahkalikaya123@gmail.com).
