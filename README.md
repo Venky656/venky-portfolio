@@ -1,112 +1,124 @@
-<div align="center">
+<p align="center">
+  <img src="https://github.com/Venky656/venky-portfolio/raw/main/public/favicon.svg" alt="VK Logo" width="80" />
+</p>
 
-# 🖥️ Venkaiah Swamy Kalikaya | Portfolio
+<h1 align="center">Venkaiah Swamy Kalikaya — Portfolio</h1>
 
-**B.Tech CSE · DSA Problem Solving · Web Development · AI Enthusiast**
+<p align="center">
+  <b>B.Tech CSE · DSA Problem Solving · Web Development · AI</b><br />
+  A premium, animated single-page portfolio — because a student's work deserves to look world-class too.
+</p>
 
-A premium, animated developer portfolio built with React, Vite, Tailwind CSS and Framer Motion.
+<p align="center">
+  <a href="https://venky-portfolio-v1.vercel.app">
+    <img src="https://img.shields.io/badge/LIVE-DEMO-black?style=for-the-badge&logo=vercel" />
+  </a>
+  <a href="https://github.com/Venky656">
+    <img src="https://img.shields.io/badge/GitHub-Venky656-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/venkaiah-swamy-kalikaya-236208295/">
+    <img src="https://img.shields.io/badge/LinkedIn-Kalikaya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-venky--portfolio--v1-black?logo=vercel)](https://venky-portfolio-v1.vercel.app)
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
-[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite)](https://vite.dev)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com)
-[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-13-0055FF?logo=framer)](https://motion.dev)
-[![Stars](https://img.shields.io/github/stars/Venky656/venky-portfolio)](https://github.com/Venky656/venky-portfolio)
+---
 
-</div>
+## 👋 Welcome!
 
-## ✨ About
+Hey! I'm **Venky** — a Computer Science undergrad who genuinely loves solving problems. This repo is the code behind my portfolio: the home of my journey through **DSA**, **web development**, and **AI**.
 
-This is my personal portfolio website — a single-page showcase of my journey as a B.Tech CSE student passionate about **Data Structures & Algorithms, web development, and AI**. It features premium animations, an interactive projects showcase, and a polished dark-themed UI.
+Built from scratch, one commit at a time. No WordPress, no template — just **React**, **Tailwind CSS**, and a whole lot of **Framer Motion** animations.
 
-## 🚀 Features
+## ✨ Features
 
-- **Animated hero** — smooth spring entrance animations
-- **Custom cursor** — interactive dot cursor on desktop
-- **Projects showcase** — hover a project to see its screenshot slide into the preview card
-- **Get in touch** — copy email / phone / address with one click
-- **Dark / light themes** + multiple accent colors
-- **Lazy-loaded sections** — only loads what you scroll to
+- 🎬 **Cinematic hero** — elastic spring entrance animations
+- 🖱️ **Custom cursor** — a spring-following dot that reacts to hover (desktop)
+- 🗂️ **Interactive projects showcase** — hover a project and watch its screenshot slide into the preview card
+- 📋 **Get in touch** — one-click copy for email, phone & address, with toast notifications
+- 🌙 **Dark / light themes** + multiple accent colors
+- ⚡ **Blazing fast** — lazy-loaded sections, code-split bundles, and 4–6 MB screenshots crushed to ~50 KB WebP
+- 🎨 **Film grain & spotlight** overlays for that premium cinematic feel
 
-## 🛠️ Tech Stack
+## 🛠️ Built With
 
-| Tech          | Purpose            |
-| ------------- | ------------------ |
-| React 19      | UI framework       |
-| Vite 8        | Build tool         |
-| Tailwind CSS 4 | Styling           |
-| Framer Motion | Animations         |
-| lucide-react  | Icons              |
-| shadcn/ui     | UI components      |
-| Vercel        | Deployment         |
+| Tech | Why |
+|------|-----|
+| [React 19](https://react.dev) | Core UI framework |
+| [Vite 8](https://vite.dev) | Fast builds + HMR |
+| [Tailwind CSS 4](https://tailwindcss.com) | Clean, utility-first styling |
+| [Framer Motion](https://motion.dev) | Smooth, spring-based animations |
+| [lucide-react](https://lucide.dev) | Lightweight icons |
+| [shadcn/ui](https://ui.shadcn.com) | Solid accessible components |
+| [Vercel](https://vercel.com) | Global edge deployment |
 
-## 📦 Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
-
-- Node.js v18+
-
-### Installation
+Want to run it locally? Super easy:
 
 ```bash
 # 1. Clone the repo
 git clone https://github.com/Venky656/venky-portfolio.git
-cd venky-portfolio
 
 # 2. Install dependencies
-npm install
+cd venky-portfolio && npm install
 
 # 3. Start the dev server
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open **http://localhost:5173** — you're live! 🎉
 
-### Scripts
+**Scripts:**
 
-| Command           | Description                     |
-| ----------------- | ------------------------------- |
-| `npm run dev`     | Start development server        |
-| `npm run build`   | Build for production            |
-| `npm run preview` | Preview the production build    |
-| `npm run lint`    | Run Oxlint checks               |
+| Command | What it does |
+|--------|--------------|
+| `npm run dev` | Start dev server with hot reload |
+| `npm run build` | Production build |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run Oxlint checks |
 
 ## 📁 Project Structure
 
 ```
-src/
-├── components/     # All UI components + shadcn/ui primitives
-│   ├── Hero.jsx    # Landing section
-│   ├── Projects.jsx# Interactive project showcase
-│   ├── Contact.jsx # Form + get-in-touch card
-│   └── ...
-├── data/
-│   └── portfolioData.js   # All personal content lives here
-├── App.jsx
-└── main.jsx
+venky-portfolio/
+├── public/            # Images, favicon (served directly)
+├── src/
+│   ├── components/    # All UI components (Hero, Projects, Contact, ...)
+│   ├── data/
+│   │   └── portfolioData.js   # ✍️ All your personal content lives here
+│   ├── App.jsx
+│   └── main.jsx
+└── vite.config.js
 ```
 
-> **Note:** Update all your personal info (bio, education, skills, projects, contact) in **`src/data/portfolioData.js`**.
+> **💡 Tip for future me & anyone reading:** 90% of edits you'll ever want (bio, projects, skills, contact details) are in **`src/data/portfolioData.js`**. Everything else is the engine around it.
 
-## 🌐 Deployment
+## 🧰 Roadmap
 
-Deployed on **Vercel**: [venky-portfolio-v1.vercel.app](https://venky-portfolio-v1.vercel.app)
+- [x] Core portfolio + animations
+- [x] Interactive projects preview
+- [x] Get-in-touch with copy-to-clipboard
+- [x] Performance pass (images, code-split, lazy-load)
+- [ ] Resume section (coming soon)
+- [ ] Live DSA stats from LeetCode / CodeChef
+- [ ] Light-mode polish pass
 
-```bash
-npx vercel --prod
-```
+## 📬 Let's Connect
 
-## 📫 Contact
+I'm always up for a chat about DSA, open source, or random side projects:
 
-**Venkaiah Swamy Kalikaya** (aka Venky)
+- 📧 **Email:** [venkaiahkalikaya123@gmail.com](mailto:venkaiahkalikaya123@gmail.com)
+- 🐙 **GitHub:** [Venky656](https://github.com/Venky656)
+- 💼 **LinkedIn:** [venkaiah-swamy-kalikaya](https://www.linkedin.com/in/venkaiah-swamy-kalikaya-236208295/)
+- ⚡ **LeetCode:** [venkaiahkalikaya123](https://leetcode.com/u/venkaiahkalikaya123/)
+- 🍽️ **CodeChef:** [venkey30](https://www.codechef.com/users/venkey30)
 
-- 📧 [venkaiahkalikaya123@gmail.com](mailto:venkaiahkalikaya123@gmail.com)
-- 🐙 [GitHub](https://github.com/Venky656)
-- 💼 [LinkedIn](https://www.linkedin.com/in/venkaiah-swamy-kalikaya-236208295/)
-- ⚡ [LeetCode](https://leetcode.com/u/venkaiahkalikaya123/)
-- 🍽️ [CodeChef](https://www.codechef.com/users/venkey30)
-- 🏆 [HackerRank](https://www.hackerrank.com/profile/venkaiahkalikay1)
+## ⭐ Show Some Love
+
+If this repo helped you or inspired your own portfolio, a **star** is the fastest way to say thanks. It also genuinely motivates a student like me to keep building. 🙂🙏
 
 ---
 
-<div align="center">Made with 💜 by Venky</div>
+<p align="center">
+  Made with 💜 by <b>Venkaiah Swamy Kalikaya</b> &nbsp;·&nbsp; © 2026
+</p>
