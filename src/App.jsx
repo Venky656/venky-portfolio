@@ -1,16 +1,22 @@
+import { Suspense, lazy } from 'react'
 import { ThemeProvider } from './ThemeProvider'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
-import Education from './components/Education'
-import Skills from './components/Skills'
-import Profiles from './components/Profiles'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
 import FilmGrain from './components/FilmGrain'
 import CustomCursor from './components/CustomCursor'
 import Spotlight from './components/Spotlight'
+
+const About = lazy(() => import('./components/About'))
+const Education = lazy(() => import('./components/Education'))
+const Skills = lazy(() => import('./components/Skills'))
+const Profiles = lazy(() => import('./components/Profiles'))
+const Projects = lazy(() => import('./components/Projects'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
+
+function SectionFallback() {
+  return <div className="py-24" aria-hidden="true" />
+}
 
 export default function App() {
   return (
@@ -22,14 +28,18 @@ export default function App() {
         <Navbar />
         <main className="relative z-10">
           <Hero />
-          <About />
-          <Education />
-          <Skills />
-          <Profiles />
-          <Projects />
-          <Contact />
+          <Suspense fallback={<SectionFallback />}>
+            <About />
+            <Education />
+            <Skills />
+            <Profiles />
+            <Projects />
+            <Contact />
+          </Suspense>
         </main>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </div>
     </ThemeProvider>
   )
