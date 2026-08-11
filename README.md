@@ -15,6 +15,15 @@ npm install
 npm run dev
 ```
 
+## 📜 Scripts
+
+| Command           | Description          |
+| ----------------- | -------------------- |
+| `npm run dev`     | Dev server           |
+| `npm run build`   | Production build     |
+| `npm run preview` | Preview build        |
+| `npm run lint`    | Lint                 |
+
 ## 📁 Structure
 
 ```
@@ -30,3 +39,7 @@ Edit `src/data/portfolioData.js` to update bio, projects, skills and contact.
 - Email: [venkaiahkalikaya123@gmail.com](mailto:venkaiahkalikaya123@gmail.com)
 - GitHub: [Venky656](https://github.com/Venky656)
 - LinkedIn: [venkaiah-swamy-kalikaya](https://www.linkedin.com/in/venkaiah-swamy-kalikaya-236208295/)
+
+---
+
+© 2026 Venkaiah Swamy Kalikaya
