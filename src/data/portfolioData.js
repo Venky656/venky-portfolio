@@ -3,14 +3,14 @@ export const profile = {
   aka: 'Venky',
   title: 'Software Developer & AI Enthusiast',
   tagline:
-    "The web is loud, and most brands just blend into it. I work across design, development, and branding — building digital experiences that feel as sharp as they look.",
+    'B.Tech CSE student who loves solving DSA problems and building fast, clean web experiences — now exploring AI.',
   email: 'venkaiahkalikaya123@gmail.com',
 }
 
 export const about = {
   bio: [
-    "The web is loud, and most brands just blend into it. I work across design, development, and branding all at once, building digital experiences that feel as sharp as they look. Nothing gets handed off between teams or lost in translation, because I build every layer myself.",
-    "That's how the identity we create together actually holds up once it's live. If your brand deserves to be seen, let's make sure people can't look away.",
+    "I'm a B.Tech Computer Science student at QIS College of Engineering and Technology who loves solving DSA problems and building for the web. I work across Java, Python, and JavaScript — turning ideas into fast, clean digital experiences.",
+    "Currently exploring AI while sharpening my problem-solving on LeetCode, CodeChef, and HackerRank. If you've got an interesting problem or project, let's talk.",
   ],
 }
 

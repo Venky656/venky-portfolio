@@ -1,5 +1,9 @@
 import { useEffect, useRef } from 'react'
 
+const isSafari = () =>
+  typeof window !== 'undefined' &&
+  /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+
 export default function Spotlight() {
   const blobRef = useRef(null)
 
@@ -8,6 +12,10 @@ export default function Spotlight() {
     if (window.innerWidth < 1024) return
     const blob = blobRef.current
     if (!blob) return
+
+    if (isSafari()) {
+      blob.classList.add('safari-idle')
+    }
 
     let targetX = 0
     let targetY = 0
@@ -20,8 +28,7 @@ export default function Spotlight() {
       const dy = targetY - currentY
       currentX += dx * 0.05
       currentY += dy * 0.05
-      blob.style.left = `${currentX}px`
-      blob.style.top = `${currentY}px`
+      blob.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`
       if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
         raf = requestAnimationFrame(update)
       } else {

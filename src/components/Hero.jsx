@@ -94,6 +94,23 @@ export default function Hero() {
             </a>
           </Button>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-6"
+        >
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-medium uppercase tracking-[0.25em] text-muted-foreground underline decoration-primary/50 underline-offset-4 transition-colors duration-300 hover:text-primary"
+            style={{ fontFamily: "'Share Tech Mono', monospace" }}
+          >
+            ↓ Download Resume
+          </a>
+        </motion.div>
       </div>
     </section>
   )

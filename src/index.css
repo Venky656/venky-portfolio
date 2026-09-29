@@ -233,13 +233,18 @@
   z-index: 0;
   width: var(--blob-size);
   height: var(--blob-size);
-  left: 50%;
-  top: -20%;
+  left: 0;
+  top: 0;
   translate: -50% -50%;
   border-radius: 50%;
   background: linear-gradient(to right, var(--secondary), var(--primary));
   filter: blur(calc(var(--blob-size) / 2.15));
   pointer-events: none;
+  will-change: transform;
+}
+#blob.safari-idle {
+  --blob-size: 200px;
+  filter: blur(60px);
 }
 @media (prefers-reduced-motion: reduce) {
   #blob {

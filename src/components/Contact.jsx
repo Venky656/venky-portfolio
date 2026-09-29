@@ -217,9 +217,16 @@ function ContactCard() {
 
         {/* resume */}
         <div className="mt-5">
-          <p className="flex items-center gap-2 text-sm text-muted-foreground/60" style={mono}>
-            <FileText className="size-4 text-primary/60" /> Resume — coming soon
-          </p>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/resume inline-flex items-center gap-2 rounded-xl border border-primary/60 bg-primary/15 px-4 py-3 text-sm font-semibold text-foreground shadow-[0_0_20px_-6px_var(--color-primary)] transition-all duration-300 hover:border-primary hover:bg-primary/25 hover:shadow-[0_0_28px_-4px_var(--color-primary)]"
+            style={mono}
+          >
+            <FileText className="size-4 text-primary transition-transform duration-300 group-hover/resume:scale-110" />
+            Download Resume
+          </a>
         </div>
       </div>
 

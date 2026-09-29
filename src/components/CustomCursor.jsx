@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion'
 
+const isSafari = () =>
+  typeof window !== 'undefined' &&
+  /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+
 export default function CustomCursor() {
   const [enabled, setEnabled] = useState(false)
   const [hidden, setHidden] = useState(true)
@@ -47,7 +51,7 @@ export default function CustomCursor() {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className={`-translate-x-1/2 -translate-y-1/2 rounded-full bg-primary shadow-around ${hovering && !projectHover ? 'mix-blend-lighten' : ''}`}
+            className={`-translate-x-1/2 -translate-y-1/2 rounded-full bg-primary shadow-around ${hovering && !projectHover && !isSafari() ? 'mix-blend-lighten' : ''}`}
             initial={{ width: 20, height: 20 }}
             style={{ width: size, height: size, transition: 'width 0.3s, height 0.3s' }}
           />

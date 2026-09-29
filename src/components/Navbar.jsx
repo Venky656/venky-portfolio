@@ -129,6 +129,18 @@ export default function Navbar() {
           ))}
           <li className="w-full px-3 pt-3 lg:hidden">
             <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="block rounded-xl bg-primary/15 px-5 py-3 text-center font-semibold uppercase tracking-[0.2em] text-primary shadow-[0_0_16px_-6px_var(--color-primary)]"
+              style={mono}
+            >
+              Resume
+            </a>
+          </li>
+          <li className="w-full px-3 pt-3 lg:hidden">
+            <a
               href="#contact"
               onClick={() => setOpen(false)}
               className="block rounded-xl bg-primary px-5 py-3 text-center font-semibold uppercase tracking-[0.2em] text-primary-foreground"
@@ -140,6 +152,15 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-3">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-xl border border-primary/50 bg-primary/15 px-4 py-2.5 text-sm font-bold uppercase tracking-[0.2em] text-primary shadow-[0_0_16px_-6px_var(--color-primary)] transition-all duration-300 hover:bg-primary/25 lg:block"
+            style={mono}
+          >
+            Resume
+          </a>
           <a
             href="#contact"
             className="hidden rounded-xl bg-primary px-5 py-2.5 font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-transform duration-300 hover:scale-105 lg:block"
