@@ -84,6 +84,20 @@ export const codingProfiles = [
 
 export const projects = [
   {
+    slug: 'docent-ai',
+    title: 'Docent — AI Document Q&A',
+    year: '2026',
+    emoji: '📄',
+    description:
+      'Chat with any PDF and get cited answers. RAG pipeline (LangChain + FAISS + MiniLM embeddings) with streamed LLM responses, page-level citations, OCR for scanned pages, and multi-provider support (Groq, Gemini, Grok).',
+    github: 'https://github.com/Venky656/docent-ai',
+    live: null,
+    linkType: 'github',
+    image: null,
+    tags: ['Python', 'Flask', 'LangChain', 'FAISS', 'Groq', 'RAG'],
+    gradient: 'from-blue-500/25 via-primary/20 to-background',
+  },
+  {
     slug: 'nature-web',
     title: 'Nature Web',
     year: '2026',
